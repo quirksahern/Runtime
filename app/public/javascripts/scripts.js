@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Step 5: Redirect to the completion page after typing 20 characters
     inputField.addEventListener('input', function() {
         if (inputField.value.length === 20) {
-            window.location.href = "completion-page.html";
+            window.location.href = "finish-page.html";
         }
     });
 });
