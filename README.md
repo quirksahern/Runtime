@@ -53,8 +53,10 @@ Software source code is licensed under a [MIT license](https://opensource.org/li
 
 ## Further reading :books:
 
-Some great resources on running inclusive events (inspiration for future vignettes) include:
-- https://alexwlchan.net/ideas-for-inclusive-events/
-- https://mozilla.github.io/learning-networks/clubs/events-women-girls-guide/
-- https://thenewstack.io/how-to-design-inclusion-into-a-tech-event/
+Some great resources on understanding the impact of computing, AI and data centres include:
+- Estampa's *Cartography of generative AI* ([2024](https://cartography-of-generative-ai.net/))
+- Max Liborion's *Pollution Is Colonialism* ([2021](https://search.worldcat.org/title/1240501259))
+- Mary L. Gray and Siddharth Suri's book *Ghost work: how to stop Silicon Valley from building a new global underclass* ([2019](https://search.worldcat.org/title/1052904468))
+- Loïc Lannelongue, Jason Grealey, and Michael Inouye's ‘Green Algorithms: Quantifying the Carbon Footprint of Computation’ *Advanced Science* ([2021](https://doi.org/10.1002/advs.202100707))
+- Crawford's [*Atlas of AI*](https://search.worldcat.org/en/title/1267751007)
 
