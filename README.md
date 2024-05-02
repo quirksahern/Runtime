@@ -1,5 +1,6 @@
-# Runtime
-SSI Hack Day project: Making Runtime Run
+# Run! For Runtime
+
+SSI Hack Day project: Run! For Runtime
 
 ## Why
 
