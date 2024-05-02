@@ -1,4 +1,4 @@
-# Run! For Runtime
+# Run! For Runtime (powered by Al Gore-rithm)
 
 SSI Hack Day project: Run! For Runtime
 
