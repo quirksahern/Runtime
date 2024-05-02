@@ -26,3 +26,12 @@ There is a disconnect between users of compute (in particular, high resource use
 - Keep Run for Runtime updated with the latest resources/research
 
 Please [open a GitHub issue](https://github.com/quirksahern/Runtime/issues) to suggest a new idea, contribute a task, or let us know about bugs.
+
+
+## Acknowledgements :family:
+
+This project originated as part of the Collaborations Workshop 2024.
+
+It was based on an original idea by Samantha Ahern, Sophia Batchelor, Neil Chue Hong, Sarah Jaffa, Patrick McCann and Colin Sauze.
+
+The first prototype was developed during the CW24 hackday by Samantha Ahern (@quirksahern), James Baker (@drjwbaker), Sophia Batchelor (@BrainonSilicon), Neil Chue Hong (@npch) and Patrick McCann (@pgmcann).
