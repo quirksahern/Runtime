@@ -1,0 +1,135 @@
+body {
+    box-sizing: border-box;
+    --bg: hsl(0, 100%, 0%); 
+    font-family: "Verdana", sans-serif;
+    margin: 20px;
+    padding: 20px;
+}  
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+.content {
+    max-width: 800px;
+    display: flex;
+}
+.image {
+    flex: 0 0 200px;
+    padding-top: 10px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.text {
+    flex: 1;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    margin-bottom: 20px; 
+}
+
+p {
+    margin-bottom: 10px; 
+}
+
+
+/* STYLIZED INPUT BOX */
+
+input {
+    content: '';
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ffe2e2; /* #FFF; */
+    padding: 16px;
+    margin-top: 50px; 
+    border: none;
+    height: 100%;
+    width: calc(100% - 40px);
+    background: #f8bcbc;
+    box-shadow: 
+        -6px -6px 1em rgba(255, 222, 222, 0.278),
+        6px 6px 1em rgba(255, 37, 37, 0.8);
+    border: 3.75px solid #ff9d9d;
+    transition: 0.125s;
+}
+
+
+input:focus{
+    outline: none;
+  box-shadow: 
+-6px -6px 1em rgba(255, 255, 255, 0.03),
+6px 6px 1em rgba(10, 8, 10, 0.8),
+inset -5px -5px 0.25em rgba(255, 69, 69, 0.589),
+inset 6px 6px 1em rgba(249, 76, 76, 0.589);
+}
+ 
+/*
+.wrapper {
+    padding: 3rem;
+    background: #010115;  /* var(--bg); */
+    /* position: relative;
+  } 
+
+/* STYLIZED POPUPS */
+
+.popup {
+    display: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* playground sand box experimenting with neuromorphic design for the input box */ 
+
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #161117;
+}
+
+*/ 
+
+/*
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%);
+}
+
+section{
+    height: 10%;
+    width: 25%;
+}
+
+*/
