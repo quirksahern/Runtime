@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    --bg: hsl(0, 100%, 0%); 
+    font-family: "Geist Sans", sans-serif;
+}  
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
+
+/* TEXT GRADIENT STYLING */
+    :root { 
+        --c1: #e1ff00;
+        --c2: #ff5acd;
+        --c3: #2563eb;
+        --gradient: linear-gradient(
+        30deg,
+        var(--c3),
+        var(--c2),
+        var(--c1),
+        var(--c2),
+        var(--c3)
+        );
+        /* 
+        linear easing generator
+        https://linear-easing-generator.netlify.app/
+        */
+        --ease-elastic: linear(
+        0, 0.186 2.1%, 0.778 7.2%, 1.027 9.7%, 1.133, 1.212, 1.264, 1.292 15.4%,
+        1.296, 1.294, 1.285, 1.269 18.9%, 1.219 20.9%, 1.062 25.8%, 0.995 28.3%,
+        0.944 31.1%, 0.93, 0.921, 0.92 35.7%, 0.926, 0.94 39.7%, 1.001 47%, 1.014,
+        1.021 52.4%, 1.02 56.4%, 1 65.5%, 0.994 70.7%, 1.001 88.4%, 1
+        );
+        --ease-bounce-out: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .text {
+        margin-inline: auto;
+        padding-block: 0.2em;
+        max-inline-size: 15ch;
+        text-wrap: balance;
+        background-image: var(--gradient);
+        background-size: 400%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    
+  
+h2, p {
+    font-weight: 120;
+    line-height: 1.07;
+    overflow: hidden;
+    width: 100ch;
+    background-clip: text;
+    text-wrap: balance;
+    font-size: clamp(2rem, 1rem + 4vw, 12rem);
+    display: inline-block;
+    margin: 0;
+}
+
+/* STYLIZED INPUT BOX */
+
+input{
+    content: '';
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ff5acd; /* #FFF; */
+    padding: 20px;
+    margin-top: 10px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    background: #161117;
+    box-shadow: 
+-6px -6px 1em rgba(255, 255, 255, 0.03),
+6px 6px 1em rgba(10, 8, 10, 0.8);
+  border: 3.75px solid #161117;
+  transition: 0.125s;
+}
+
+input:focus{
+    outline: none;
+  box-shadow: 
+-6px -6px 1em rgba(255, 255, 255, 0.03),
+6px 6px 1em rgba(10, 8, 10, 0.8),
+inset -5px -5px 0.25em rgba(255, 255, 255, 0.05),
+inset 6px 6px 1em rgba(12, 8, 12, 0.8);
+}
+ 
+/*
+.wrapper {
+    padding: 3rem;
+    background: #010115;  /* var(--bg); */
+    /* position: relative;
+  } 
+
+/* STYLIZED POPUPS */
+
+.popup {
+    display: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* playground sand box experimenting with neuromorphic design for the input box */ 
+
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #161117;
+}
+
+*/ 
+
+/*
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%);
+}
+
+section{
+    height: 10%;
+    width: 25%;
+}
+
+*/
