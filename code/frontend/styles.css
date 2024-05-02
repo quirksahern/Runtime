@@ -1,10 +1,35 @@
+:root {
+   /* background: rgb(11, 0, 11); */
+    /* background: linear-gradient(342deg, rgba(200,3,3,1) 0%, rgba(254,255,93,1) 100%); */
+            /* 
+        linear easing generator
+        https://linear-easing-generator.netlify.app/
+        */
+        --ease-elastic: linear(
+        0, 0.186 2.1%, 0.778 7.2%, 1.027 9.7%, 1.133, 1.212, 1.264, 1.292 15.4%,
+        1.296, 1.294, 1.285, 1.269 18.9%, 1.219 20.9%, 1.062 25.8%, 0.995 28.3%,
+        0.944 31.1%, 0.93, 0.921, 0.92 35.7%, 0.926, 0.94 39.7%, 1.001 47%, 1.014,
+        1.021 52.4%, 1.02 56.4%, 1 65.5%, 0.994 70.7%, 1.001 88.4%, 1
+        );
+        --ease-bounce-out: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+
+
 body {
     box-sizing: border-box;
     --bg: hsl(0, 100%, 0%); 
     font-family: "Verdana", sans-serif;
     margin: 20px;
     padding: 20px;
+    padding-top: 50px;
 }  
+
+.box {
+    background-color: #ffffffa3;
+    padding: 10px;
+    border-radius: 24px;
+}
 
 .container {
     display: flex;
@@ -48,14 +73,17 @@ p {
 
 input {
     content: '';
+    border-radius: 12px;
     font-size: 16px;
     letter-spacing: 1px;
     color: #ffe2e2; /* #FFF; */
     padding: 16px;
+    margin-left: 180px;
     margin-top: 50px; 
+    align-self: center;
     border: none;
     height: 100%;
-    width: calc(100% - 40px);
+    width: calc(60%);
     background: #f8bcbc;
     box-shadow: 
         -6px -6px 1em rgba(255, 222, 222, 0.278),
@@ -105,6 +133,50 @@ inset 6px 6px 1em rgba(249, 76, 76, 0.589);
     border: none;
     cursor: pointer;
 }
+
+.grid-container { 
+	position: absolute; width: 200%; height: 100vh; bottom: 0; left: -50%; overflow: hidden; 
+	transform: perspective(400px) rotateX(40deg) scale(1) translateZ(0);
+	transform-origin: bottom;
+	padding: 1px; 
+	-webkit-background-clip: content-box; 
+	-webkit-backface-visibility: hidden;
+	outline: 1px solid transparent; 
+	will-change: transform; 
+}
+
+.grid-line { height: 100%; width: 100%; position: absolute; }
+
+
+.grid-line:before,
+.grid-line:after  { content: ""; display: block; position: absolute; }
+.grid-line:before { height: 5px; width: 100%; background: rgb(255, 2, 2); }
+.grid-line:after  { height: 100%; width: 5px; background-image: linear-gradient(transparent, rgb(255, 51, 51)); }
+
+.grid-line:nth-child(1):before  { top: 0%;  opacity: 0; }
+.grid-line:nth-child(2):before  { top: 10%; opacity: 0; }
+.grid-line:nth-child(3):before  { top: 20%; opacity: .3; }
+.grid-line:nth-child(4):before  { top: 30%; opacity: .4; }
+.grid-line:nth-child(5):before  { top: 40%; opacity: .5; }
+.grid-line:nth-child(6):before  { top: 50%; opacity: .6; }
+.grid-line:nth-child(7):before  { top: 60%; opacity: .7; }
+.grid-line:nth-child(8):before  { top: 70%; opacity: .8; }
+.grid-line:nth-child(9):before  { top: 80%; opacity: .9; }
+.grid-line:nth-child(10):before { top: 90%; opacity: 1; }
+.grid-line:nth-child(11):before { top: calc(100% - 3px); }
+
+
+.grid-line:nth-child(1):after  { left: 0%;  }
+.grid-line:nth-child(2):after  { left: 10%; }
+.grid-line:nth-child(3):after  { left: 20%; }
+.grid-line:nth-child(4):after  { left: 30%; }
+.grid-line:nth-child(5):after  { left: 40%; }
+.grid-line:nth-child(6):after  { left: 50%; }
+.grid-line:nth-child(7):after  { left: 60%; }
+.grid-line:nth-child(8):after  { left: 70%; }
+.grid-line:nth-child(9):after  { left: 80%; }
+.grid-line:nth-child(10):after { left: 90%; }
+.grid-line:nth-child(11):after { left: calc(100% - 3px); }
 
 /* playground sand box experimenting with neuromorphic design for the input box */ 
 
