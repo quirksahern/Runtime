@@ -54,9 +54,13 @@ The exercise goes through a series of stages, representing different things that
 - Energy: for powering the data centre
 - Water: needed for cooling the data centre
 
-For each stage, a set of one or more tasks are given to the gatherers, while the researcher waits. Once the task has been successfully completed, the exercise moves on to the next stage.
+For each stage, a set of [one or more tasks](task_descriptions.md) are given to the gatherers, while the researcher waits. Once the task has been successfully completed, the exercise moves on to the next stage.
 
-The facilitator may choose which of the set of tasks to use, depending on the audience.
+The facilitator may choose which of the set of tasks to use, depending on the audience. For instance, if working with an able-bodied, in-person audience they may choose to interpret a task requiring the collection of physical objects representing the resource (e.g. water) to include physically bringing it into one location; or if virtual, they may ask gatherers to take a photo of the item and send it.
 
+Facilitators should give thought to how best to create dissonance between the researcher and the gatherers to represent the disconnect between the interface presented to users and the things that running computation has an impact on. This can be done by making gatherers "work" to complete the task, demonstrating the inequality.
 
+### Explanation
+
+Once the stages have been completed, signifying the job having successfully run, the facilitator should moderate a discussion around how the participants felt, doing the exercise. Additional resources are provided for each task to help ground the different tasks with the real research and evidence for the resources being used and the impacts caused.
 
