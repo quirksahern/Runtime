@@ -1,6 +1,6 @@
 # Our global, build settings
 [build]
-   base    = "."        # run the buold from this directory
-   publish = "public"      # the output diretory to push to the CDN after the build
+   base    = "code"        # run the build from this directory
+   publish = "public"      # the output directory to push to the CDN after the build
    command = "deploy site"  # the command to build our site
   
